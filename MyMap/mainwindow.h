@@ -9,7 +9,7 @@
 //class SlippyMap;
 class CMap;
 class QNetworkSession;
-class downloadimage;
+class CMapWidget;
 
 namespace Ui {
 class MainWindow;
@@ -25,29 +25,15 @@ public:
 
 private slots:
     void on_action_Draw_map_triggered();
-    void paintEvent(QPaintEvent *e);
-    void resizeEvent(QResizeEvent *);
-    void mousePressEvent(QMouseEvent *e);
-    void mouseMoveEvent(QMouseEvent *e);
-    void mouseReleaseEvent(QMouseEvent *);
-    void keyPressEvent(QKeyEvent *e);
-    void sessionOpened();
-
     void on_actionVien_CNTT_triggered();
     void on_actionDownload_From_URL_triggered();
+    //void sessionOpened();
 
 private:
     Ui::MainWindow *ui;
-    //Lightmap *map;
-    //SlippyMap *myMap;
-    CMap *myMap;
-    void setCenterMap(qreal mlat, qreal mlong);
-    QNetworkSession *networkSession;
-    QLabel* imageLabel;
-    bool pressed;
-    bool snapped;
-    QPoint pressPos;
-    QPoint dragPos;
+    //QNetworkSession *networkSession;
+    CMapWidget *mapWidget;
+    QVBoxLayout *vlayout;
 
 };
 
