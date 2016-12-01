@@ -15,11 +15,9 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    cmap.cpp \
     cmapwidget.cpp
 
 HEADERS  += mainwindow.h \
-    cmap.h \
     cmapwidget.h
 
 FORMS    += mainwindow.ui

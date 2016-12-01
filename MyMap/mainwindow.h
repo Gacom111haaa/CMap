@@ -26,8 +26,8 @@ public:
 private slots:
     void on_action_Draw_map_triggered();
     void on_actionVien_CNTT_triggered();
-    void on_actionDownload_From_URL_triggered();
-    //void sessionOpened();
+
+    void on_verticalSlider_sliderReleased();
 
 private:
     Ui::MainWindow *ui;

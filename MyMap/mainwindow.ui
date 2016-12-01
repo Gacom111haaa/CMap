@@ -17,13 +17,35 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>60</x>
       <y>10</y>
-      <width>321</width>
-      <height>501</height>
+      <width>621</width>
+      <height>451</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+   <widget class="QSlider" name="verticalSlider">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>22</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>14</number>
+    </property>
+    <property name="maximum">
+     <number>16</number>
+    </property>
+    <property name="value">
+     <number>15</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">

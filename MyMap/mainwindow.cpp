@@ -29,17 +29,17 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_action_Draw_map_triggered()
 {
-    mapWidget->setCenterMap(21.033333, 105.849998);
-    //myMap->
+    mapWidget->setCenterPos(21.033333, 105.849998);
 }
-
 
 void MainWindow::on_actionVien_CNTT_triggered()
 {
-    mapWidget->setCenterMap(21.046672, 105.801577);
+    mapWidget->setCenterPos(21.046672, 105.801577);
 }
 
-void MainWindow::on_actionDownload_From_URL_triggered()
+void MainWindow::on_verticalSlider_sliderReleased()
 {
-
+    int data = ui->verticalSlider->value();
+    mapWidget->setScaleRatio(data);
+    mapWidget->invalidate();
 }
